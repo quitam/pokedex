@@ -1,5 +1,5 @@
 body{
-    background-color: aqua;
+    background-color: #ffe26a;
     margin: 0;
     font-family: 'Arvo', serif;
 }
@@ -7,10 +7,16 @@ h1{
     color: red;
     font-family: 'Arvo';
 }
+img{
+    margin: auto;
+}
 .card{
     padding: 10px;
-    background-color: blueviolet;
+    background-color: #abd699;
 }
 #pokedex{
-    padding-inline-start: 10px;
+    padding-inline: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    grid-gap: 20px;
 }
