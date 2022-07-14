@@ -1,3 +1,16 @@
+body{
+    background-color: aqua;
+    margin: 0;
+    font-family: 'Arvo', serif;
+}
 h1{
     color: red;
+    font-family: 'Arvo';
+}
+.card{
+    padding: 10px;
+    background-color: blueviolet;
+}
+#pokedex{
+    padding-inline-start: 10px;
 }
