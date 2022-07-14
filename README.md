@@ -1,5 +1,7 @@
 ﻿# pokedex
 đây là trang dùng để xem thông tin Pokemon
+
+
 template
 
 Light Lime: #abd699
