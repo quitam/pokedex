@@ -12,7 +12,8 @@ let loadPokemon = () => {
             id: data.id,
             name: data.name,
             image: data.sprites['front_default'],
-            types: data.types.map((param) => param.type.name).join(', ')
+            back_image: data.sprites['back_default'],
+            types: data.types.map((param) => param.type.name).join(',  ')
         }))
         showPokemon(pokemon)
     })
@@ -22,15 +23,18 @@ let showPokemon = (id) => {
     let value = id.map((poke) =>
         `
     <div class="card">
-        <img src="${poke.image}">
+        <img src='${poke.image}' alt="pokemon" id="image">
+        <img src='${poke.back_image}' alt="back_pokemon" id="back_image">
         <div class="container">
             <h2>${poke.id}. ${poke.name}</h2>
             <p>Types: ${poke.types}</p>
+            <p>${poke.back_image}</p>
         </div>
-        
-        
     </div>
     `).join('')
     pokedex.innerHTML = value
 }
 loadPokemon()
+
+
+
